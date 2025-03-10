@@ -1,0 +1,66 @@
+.html {
+  width: 770px;
+  font: Arial, sans-serif;
+  font-size: 1.5em;
+  color: black;
+}
+
+a:link {
+  color: #0000ff;
+}
+a:hover {
+  color: #ff0000;
+}
+/* a:visited {
+  color: #0000ff;
+} */
+
+.cabecera {
+  height: 100px;
+  background-color: white;
+  padding: 20px;
+  border: 10px solid black;
+  background-image: url('fondo.jpg');
+  margin: 0 auto; /* Centra el div horizontalmente */
+}
+
+
+table {
+  width: 100%; /* Hace que la tabla ocupe todo el ancho */
+  border-collapse: collapse; /* Elimina los espacios entre celdas */
+}
+
+
+td {
+  padding: 10px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+.div_centro {
+  height: 300px;
+  border: 10px solid black;
+}
+
+.div_centro_izq {
+  height: ;
+  width: 320px;
+  background-color: red;
+  align-items: center;
+  border: 10px solid black;
+
+}
+
+.div_centro_medio {
+  width: 180px;
+  background-color: blue;
+  border: 10px solid black;
+}
+
+.div_centro_der {
+  width: 110px;
+  background-color: magenta;
+  border: 10px solid black;
+}
+
+
