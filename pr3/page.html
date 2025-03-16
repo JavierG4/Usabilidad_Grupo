@@ -4,66 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Básica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: black;
-            font-size: 1.5em;
-            width: 770px;
-            margin: 0 auto;
-        }
-        header {
-            height: 100px;
-            background: url('fondo.jpg') no-repeat center center;
-            display: flex;
-            align-items: center;
-            padding: 0 1em;
-        }
-        nav {
-            display: flex;
-            gap: 1em;
-        }
-        nav a {
-            padding: 0.3em;
-            margin-bottom: 0.7em;
-            text-decoration: none;
-            color: blue;
-        }
-        nav a:visited {
-            color: blue;
-        }
-        nav a:hover {
-            color: red;
-            background-color: #f0f0f0;
-        }
-        main {
-            display: flex;
-        }
-        .zona-principal {
-            flex: 1;
-            padding: 1em;
-        }
-        .zona-secundaria {
-            width: 130px;
-            padding: 1em;
-            background-color: #f4f4f4;
-        }
-        .zona-enlaces {
-            width: 130px;
-            padding: 1em;
-        }
-        p {
-            margin-top: 0.5em;
-        }
-        table a {
-            color: green;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="pr3.css">
 </head>
 <body>
     <header>
@@ -74,7 +15,7 @@
         </nav>
     </header>
     <main>
-        <section class="zona-principal">
+        <div class="zona-principal">
             <h1>Sección Principal</h1>
             <h2>Subsección 1</h2>
             <p>Texto con un <a href="#">enlace</a>.</p>
@@ -96,9 +37,9 @@
                     <td>25</td>
                 </tr>
             </table>
-            <img src="imagen.jpg" alt="Descripción de la imagen">
-        </section>
-        <section class="zona-secundaria">
+            <img src="imagen.jpeg" alt="Un pato">
+        </div>
+        <div class="zona-secundaria">
             <h2>Contenido Secundario</h2>
             <article>
                 <p>Artículo con un <a href="#">enlace</a>.</p>
@@ -108,15 +49,15 @@
                     <li>Elemento 3</li>
                 </ul>
             </article>
-        </section>
-        <aside class="zona-enlaces">
+        </div>
+        <div class="zona-enlaces">
             <h2>Enlaces Relevantes</h2>
             <ul>
                 <li><a href="#">Enlace 1</a></li>
                 <li><a href="#">Enlace 2</a></li>
                 <li><a href="#">Enlace 3</a></li>
             </ul>
-        </aside>
+        </div>
     </main>
     <footer>
         Pie de página

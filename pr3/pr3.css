@@ -1,66 +1,61 @@
-.html {
-  width: 770px;
-  font: Arial, sans-serif;
-  font-size: 1.5em;
-  color: black;
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 1.5em;
+    width: 770px;
+    margin: 0 auto;
 }
-
-a:link {
-  color: #0000ff;
+header {
+    height: 100px;
+    background: url('cabecera.jpg') no-repeat center center;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
 }
-a:hover {
-  color: #ff0000;
+nav {
+    display: flex;
+    gap: 1em;
 }
-/* a:visited {
-  color: #0000ff;
-} */
-
-.cabecera {
-  height: 100px;
-  background-color: white;
-  padding: 20px;
-  border: 10px solid black;
-  background-image: url('fondo.jpg');
-  margin: 0 auto; /* Centra el div horizontalmente */
+nav a {
+    padding: 0.3em;
+    margin-bottom: 0.7em;
+    text-decoration: none;
+    color: blue;
 }
-
-
-table {
-  width: 100%; /* Hace que la tabla ocupe todo el ancho */
-  border-collapse: collapse; /* Elimina los espacios entre celdas */
+nav a:visited {
+    color: blue;
 }
-
-
-td {
-  padding: 10px;
-  text-align: left; /* Alinea el texto a la izquierda */
+nav a:hover {
+    color: red;
+    background-color: #f0f0f0;
 }
-
-
-.div_centro {
-  height: 300px;
-  border: 10px solid black;
+main {
+    display: flex;
+    justify-content: space-between;
 }
-
-.div_centro_izq {
-  height: ;
-  width: 320px;
-  background-color: red;
-  align-items: center;
-  border: 10px solid black;
-
+.zona-principal {
+    padding: 1em;
+    box-sizing: border-box;
 }
-
-.div_centro_medio {
-  width: 180px;
-  background-color: blue;
-  border: 10px solid black;
+.zona-secundaria {
+    width: 130px;
+    padding: 1em;
+    background-color: #f4f4f4;
+    /* box-sizing: border-box; */
 }
-
-.div_centro_der {
-  width: 110px;
-  background-color: magenta;
-  border: 10px solid black;
+.zona-enlaces {
+    width: 130px;
+    padding: 1em;
+    box-sizing: border-box;
 }
-
-
+p {
+    margin-top: 0.5em;
+}
+table a {
+    color: green;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #ddd;
+}
