@@ -8,10 +8,10 @@ Este repositorio es parte de la asignatura de Usabilidad y Accesibilidad, enfoca
   - Email: alu0101548197@ull.edu.es
 
 - **Alejandro Barreto**
-  - Email: alu0101546377@ull.edu.es
+  - Email: alu0101552774@ull.edu.es
 
 - **Airam Prieto Gonzalez**
-  - Email: alu0101552774@ull.edu.es
+  - Email: alu0101546377@ull.edu.es
 
 - **Izan Pérez González**
   - Email: alu0101543345@ull.edu.es
