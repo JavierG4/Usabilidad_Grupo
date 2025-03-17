@@ -1,0 +1,31 @@
+
+.contenedor {
+  height: 100px;
+  background-color: white;
+  padding: 20px;
+  border: 10px solid black;
+  background-image: url('th.jpeg');
+  margin: 0 auto; /* Centra el div horizontalmente */
+}
+
+table {
+  width: 100%; /* Hace que la tabla ocupe todo el ancho */
+  border-collapse: collapse; /* Elimina los espacios entre celdas */
+}
+
+td {
+  padding: 10px;
+  text-align: left; /* Alinea el texto a la izquierda */
+
+}
+
+a {
+  color: black;
+}
+
+.izquierda_col{
+  width: 130;
+  border: 10px ;
+  padding: 10px;
+  margin: 10px;
+}
