@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explora Destinos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Explora Destinos Increíbles</h1>
+        <p class="text-center">Descubre los mejores lugares para visitar y planifica tu próximo viaje.</p>
+        
+        <div class="row">
+            <!-- Columna 1: Información General -->
+            <div class="col-md-4">
+                <h2>Información</h2>
+                <div class="alert alert-info">Consulta información actualizada sobre destinos turísticos.</div>
+                <div class="alert alert-success">Recomendaciones de los mejores viajes.</div>
+                <div class="alert alert-warning">Precauciones y consejos de seguridad.</div>
+                
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Menú de Navegación</a>
+                </nav>
+                
+                <ul class="list-group mt-3">
+                    <li class="list-group-item">Lugares recomendados</li>
+                    <li class="list-group-item">Consejos de viaje</li>
+                    <li class="list-group-item">Seguridad en destinos</li>
+                    <li class="list-group-item">Información sobre vuelos</li>
+                    <li class="list-group-item">Transportes locales</li>
+                    <li class="list-group-item">Rutas de aventura</li>
+                    <li class="list-group-item">Hospedaje económico</li>
+                    <li class="list-group-item">Actividades para niños</li>
+                    <li class="list-group-item">Lugares para hacer compras</li>
+                    <li class="list-group-item">Clima en destinos</li>
+                </ul>
+                
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Opciones</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hoteles</a></li>
+                        <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+                        <li><a class="dropdown-item" href="#">Guías</a></li>
+                    </ul>
+                </div>
+                
+                <div class="spinner-border text-primary mt-3"></div>
+            </div>
+            
+            <!-- Columna 2: Destinos Populares -->
+            <div class="col-md-4">
+                <h2>Destinos Populares</h2>
+                <div class="accordion" id="destinos">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paris">
+                                París
+                            </button>
+                        </h2>
+                        <div id="paris" class="accordion-collapse collapse show">
+                            <div class="accordion-body">Descubre la ciudad del amor y su Torre Eiffel.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tokio">
+                                Tokio
+                            </button>
+                        </h2>
+                        <div id="tokio" class="accordion-collapse collapse">
+                            <div class="accordion-body">Explora la cultura japonesa y la vibrante ciudad de Tokio.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#londres">
+                                Londres
+                            </button>
+                        </h2>
+                        <div id="londres" class="accordion-collapse collapse">
+                            <div class="accordion-body">Visita el Big Ben y el Museo Británico.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#barcelona">
+                                Barcelona
+                            </button>
+                        </h2>
+                        <div id="barcelona" class="accordion-collapse collapse">
+                            <div class="accordion-body">Conoce la Sagrada Familia y la Rambla.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#newYork">
+                                Nueva York
+                            </button>
+                        </h2>
+                        <div id="newYork" class="accordion-collapse collapse">
+                            <div class="accordion-body">Explora la Estatua de la Libertad y Central Park.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary mt-3">Ver más destinos</button>
+                <button class="btn btn-danger mt-3">Reservar ahora</button>
+                
+                <div class="modal fade" id="modalDestino" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Reserva tu viaje</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">Selecciona tu destino y fecha de viaje.</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna 3: Galería de Imágenes -->
+            <div class="col-md-4">
+                <h2>Galería</h2>
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/400x250" class="d-block w-100" alt="París">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/400x250" class="d-block w-100" alt="Tokio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/400x250" class="d-block w-100" alt="Londres">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/400x250" class="d-block w-100" alt="Barcelona">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/400x250" class="d-block w-100" alt="Nueva York">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                
+                <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example">
+                    <p>Imágenes destacadas de destinos turísticos.</p>
+                </div>
+                
+                <button class="btn btn-success mt-3">Ver más imágenes</button>
+                <button class="btn btn-info mt-3">Compartir</button>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="formulario.html" class="btn btn-success">Planifica tu Viaje</a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
