@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario TypeScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div><h1>TypeScript</h1></div>
+        <div>
+            <button onclick="location.href='home.html'">Home</button>
+            <button onclick="location.href='shop.html'">Shop</button>
+            <button onclick="location.href='personal.html'">Personal Page</button>
+        </div>
+        <div class="user-section">
+            <img src="user.png" alt="Usuario">
+            <button onclick="location.href='profile.html'">Usuario</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Cuestionario sobre TypeScript</h1>
+        <form>
+            <div class="question">
+                <p>1. ¿Qué palabra clave se usa para definir un tipo en TypeScript?</p>
+                <input type="radio" name="q1" value="a"> var <br>
+                <input type="radio" name="q1" value="b"> let <br>
+                <input type="radio" name="q1" value="c"> type <br>
+                <input type="radio" name="q1" value="d"> function <br>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Cuál es la manera correcta de definir una función con un tipo de retorno en TypeScript?</p>
+                <input type="radio" name="q2" value="a"> function add(a: number, b: number) -> number <br>
+                <input type="radio" name="q2" value="b"> function add(a: number, b: number): number <br>
+                <input type="radio" name="q2" value="c"> function add(a, b) { return number } <br>
+                <input type="radio" name="q2" value="d"> function: add(a: number, b: number) => number <br>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Qué hace el operador "extends" en los tipos condicionales?</p>
+                <input type="radio" name="q3" value="a"> Verifica si un tipo hereda de otro <br>
+                <input type="radio" name="q3" value="b"> Compara si dos tipos son iguales <br>
+                <input type="radio" name="q3" value="c"> Convierte un tipo en otro <br>
+                <input type="radio" name="q3" value="d"> Ninguna de las anteriores <br>
+            </div>
+            
+            <div class="question">
+                <p>4. ¿Qué devuelve un tipo condicional si la condición es falsa?</p>
+                <input type="radio" name="q4" value="a"> El tipo de la rama verdadera <br>
+                <input type="radio" name="q4" value="b"> El tipo de la rama falsa <br>
+                <input type="radio" name="q4" value="c"> undefined <br>
+                <input type="radio" name="q4" value="d"> Un error de compilación <br>
+            </div>
+            
+            <div class="question">
+                <p>5. ¿Cuál de las siguientes opciones representa un tipo condicional correcto?</p>
+                <input type="radio" name="q5" value="a"> type Check<T> = T == number ? true : false <br>
+                <input type="radio" name="q5" value="b"> type Check<T> = T extends number ? true : false <br>
+                <input type="radio" name="q5" value="c"> type Check<T> = T !== number ? true : false <br>
+                <input type="radio" name="q5" value="d"> type Check<T> = if T extends number then true else false <br>
+            </div>
+            
+            <div class="question-button">
+                <button class="quiz-button" type="button"><a href="../module/module.html">Volver atrás</a></button>
+                <button class="quiz-button" type="reset">Empezar de nuevo</button>
+                <button class="quiz-button" type="submit">Enviar respuestas</button>
+            </div>
+            
+            
+        </form>
+    </div>
+</body>
+</html>

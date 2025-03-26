@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo Typescript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div><h1>Typescript</h1></div>
+        <div>
+            <button onclick="location.href='home.html'">Home</button>
+            <button onclick="location.href='shop.html'">Shop</button>
+            <button onclick="location.href='personal.html'">Personal Page</button>
+        </div>
+        <div class="user-section">
+            <img src="user.png" alt="Usuario">
+            <button onclick="location.href='profile.html'">Usuario</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#">The Basics</a>
+        <a href="#">Everyday Types</a>
+        <a href="#">Narrowing</a>
+        <a href="#">More on Functions</a>
+        <a href="#">Object Types</a>
+        <a href="#">Creating Types from Types</a>
+        <a href="#">Generics</a>
+        <a href="#">Keyof Type Operator</a>
+        <a href="#">Typeof Type Operator</a>
+        <a href="#">Indexed Access Types</a>
+        <a href="#" style="color: green; font-weight: bold;">Conditional Types</a>
+        <a href="#">Mapped Types</a>
+        <a href="#">Template Literal Types</a>
+        <a href="#">Classes</a>
+        <a href="#">Modules</a>
+    </div>
+    <div class="content">
+      <div class="content-text">
+        <h1>Conditional Types</h1>
+        <p>Los tipos condicionales en TypeScript permiten definir tipos en función de una condición dada. Son útiles para crear tipos más flexibles y reutilizables.</p>
+        
+        <h2>Ejemplo básico</h2>
+        <p>En este ejemplo, determinamos si un tipo es una cadena o no.</p>
+        <div class="code-box">
+    type IsString&ltT&gt = T extends string ? "Es un string" : "No es un string";
+        </div>
+        <p>En este caso, <code>IsString</code> es un tipo condicional que verifica si <code>T</code> es una cadena. Si lo es, devuelve "Es un string", de lo contrario, devuelve "No es un string".</p>
+        
+        <h2>Uso con genéricos</h2>
+        <p>Podemos inferir el tipo dentro de un array usando la palabra clave <code>infer</code>.</p>
+        <div class="code-box">
+    type InferType&ltT&gt = T extends Array&ltinfer U> ? U : never;
+        </div>
+        <p>El tipo <code>InferType</code> utiliza <code>infer</code> para extraer el tipo de los elementos de un array. Si <code>T</code> es un array, <code>U</code> será el tipo de sus elementos, de lo contrario, será <code>never</code>.</p>
+        
+        <h2>Restricción en tipos condicionales</h2>
+        <p>Este ejemplo verifica si un tipo es un número o no.</p>
+        <div class="code-box">
+    type CheckNumber&ltT&gt = T extends number ? "Es un número" : "No es un número";
+        </div>
+        <p>El tipo <code>CheckNumber</code> comprueba si <code>T</code> es un número. Si lo es, devuelve "Es un número", de lo contrario, devuelve "No es un número".</p>
+        
+        <h2>Combinar condicionales</h2>
+        <p>Podemos combinar múltiples condiciones en un solo tipo condicional.</p>
+        <div class="code-box">
+    type MultiCheck&ltT&gt = T extends string ? "Es un string" : T extends number ? "Es un número" : "Otro tipo";
+        </div>
+        <p>El tipo <code>MultiCheck</code> verifica si <code>T</code> es una cadena, un número o cualquier otro tipo, devolviendo un mensaje apropiado para cada caso.</p>
+        
+        <h2>Ejemplo avanzado</h2>
+        <p>Aquí verificamos si una interfaz tiene un campo <code>id</code> y retornamos un mensaje apropiado.</p>
+        <div class="code-box">
+    type ConditionalExample&ltT&gt = T extends { id: number } ? "Tiene ID" : "No tiene ID";
+        </div>
+        <p>El tipo <code>ConditionalExample</code> comprueba si <code>T</code> tiene una propiedad <code>id</code> de tipo número. Si es así, devuelve "Tiene ID", de lo contrario, devuelve "No tiene ID".</p>
+        
+        <h2>Tipos condicionales distribuidos</h2>
+        <p>Cuando se utilizan tipos condicionales con un tipo genérico que puede ser una unión, TypeScript distribuye el tipo condicional sobre cada miembro de la unión.</p>
+        <div class="code-box">
+    type Distributed&ltT&gt = T extends string ? "Es un string" : "No es un string";
+    type Test = Distributed<string | number>; // "Es un string" | "No es un string"
+        </div>
+        <p>En este ejemplo, <code>Distributed</code> se aplica a cada miembro de la unión <code>string | number</code>, resultando en una unión de los resultados.</p>
+        
+        <h2>Tipos condicionales recursivos</h2>
+        <p>Los tipos condicionales también pueden ser recursivos, lo que permite definir tipos complejos y anidados.</p>
+        <div class="code-box">
+    type Flatten &ltT&gt = T extends Array<infer U> ? Flatten&ltU&gt : T;
+    type Example = Flatten<number[][][]>; // number
+        </div>
+        <p>El tipo <code>Flatten</code> recursivamente aplana un array de arrays hasta obtener el tipo base.</p>
+        
+        <button class="quiz-button"><a href="../quiz/quiz.html">¿Estás preparado? Ir al cuestionario</a></button>
+      </div>
+    </div>
+</body>
+</html>
