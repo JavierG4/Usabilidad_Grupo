@@ -1,0 +1,389 @@
+/* Reset */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 1440px;
+  height: 3230px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera */
+.header {
+  width: 1440px;
+  height: 100px;
+  background-color: #4CAF4F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  width: 1440px;
+  height: 700px;
+  background-image: url('shop_images/fondo_container1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Permite posicionar elementos dentro */
+}
+
+/* Middle Container */
+.middle-container {
+  width: 80%;
+  max-width: 1200px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* Columnas */
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos de Texto */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-login {
+  background-color: #007BFF;
+  color: white;
+}
+
+.btn-register {
+  background-color: #28A745;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Imagen en la segunda columna */
+.right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Nueva Sección de Módulos */
+.modules-container {
+  width: 1400px;
+  height: 800px;
+  background-color: #4CAF4F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.modules-container h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modules {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.module-card {
+  width: 300px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* Para quitar el subrayado de los enlaces */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.module-card:hover {
+  transform: scale(1.05);
+}
+
+.module-card .stars {
+  color: green;
+  font-size: 1.2em;
+}
+
+.module-card p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.module-card .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.module-card img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+/* Logos de lenguajes */
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 160px; /* Aumenta la separación entre los logos */
+  margin-top: 120px;
+}
+
+.languages img {
+  width: 80px;
+}
+
+.margin-container {
+  margin: 60px;
+}
+
+/* Nuevo módulo con imagen y texto alineados */
+.new-module {
+  width: calc(100% - 160px); /* Adjust width to account for padding */
+  max-width: 1440px;
+  height: 660px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.module-content {
+  max-width: 50%;
+}
+
+.module-content h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.module-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.image-container-gafas {
+  max-width: 50%;
+}
+
+.image-container-gafas img {
+  margin: 150px;
+  width: 80%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Free Modules Section - 3 Column Layout */
+.free-modules-section {
+  width: 1400px;
+  padding: 60px 20px;
+  background-color: #F3F8FF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.three-column-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.module-column {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.module-column:hover {
+  transform: translateY(-10px);
+}
+
+.module-image {
+  height: 180px;
+  background-color: #e9f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.module-image img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.module-content {
+  padding: 25px;
+  text-align: left;
+}
+
+.module-content h3 {
+  font-size: 1.5em;
+  color: #4CAF4F;
+  margin-bottom: 15px;
+}
+
+.module-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.more-modules-btn {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.more-modules-btn:hover {
+  text-decoration: underline;
+}
+
+/* Guide Section */
+.guide-section {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.guide-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.guide-content h3 {
+  font-size: 1.5em;
+  color: #4CAF4F;
+  margin-bottom: 15px;
+}
+
+.guide-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.guide-content li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.6;
+}
