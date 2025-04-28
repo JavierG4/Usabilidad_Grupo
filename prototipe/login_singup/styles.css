@@ -45,6 +45,12 @@ a{
   color: inherit;
 }
 
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 img{
   max-width: 100%;
   height: 80%;
