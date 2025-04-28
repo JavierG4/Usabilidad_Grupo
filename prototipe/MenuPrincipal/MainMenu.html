@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -111,7 +111,8 @@
     <nav class="navbar d-flex justify-content-between">
         <div>
             <button class="btn btn-light"><i class="fas fa-home"></i> Home</button>
-            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i><a href="../shop/shop.html" style="color: rgb(69, 64, 64); text-decoration: none;"">Shop</a></button>
+            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i><a href="../shop/shop.html" style="color: rgb(69, 64, 64); text-decoration: none;">Shop</a></button>
+            <button class="btn btn-light"><i class="fas fa-link"></i><a href="../keycomb/keycomb.html" style="color: rgb(69, 64, 64); text-decoration: none;">Key Comb.</a></button>
         </div>
         <button class="register-btn"><a href="../login_singup/singup.html" style="color: white; text-decoration: none;">Register now →</a></button>
     </nav>
@@ -196,7 +197,21 @@
         <h1 style="font-weight: 600; color: black;"><strong>Start your free plan now</strong></h1>
         <button class="register-btn" style="margin-top: 20px;">Get a demo →</button>
     </div>
-    
+
+    <script>
+        // Script para detectar los atajos de teclado
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'i') {
+                window.location.href = '../login_singup/login.html'; // Ajusta la ruta según tu login
+            }
+            if (event.ctrlKey && event.key === 'l') {
+                window.location.href = '../login_singup/singup.html'; // Ajusta la ruta según tu signup
+            }
+            if (event.ctrlKey && event.key === 's') {
+                window.location.href = '../shop/shop.html'; // Ajusta la ruta de tu tienda
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

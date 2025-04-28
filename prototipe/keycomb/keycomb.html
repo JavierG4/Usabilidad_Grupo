@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Shortcuts Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+        }
+        .navbar {
+            background-color: white;
+            padding: 15px;
+        }
+        .register-btn {
+            background-color: forestgreen;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .shortcut-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .shortcut-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .shortcut-card h4 {
+            margin-bottom: 15px;
+            color: forestgreen;
+        }
+        .shortcut-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar d-flex justify-content-between">
+        <div>
+            <a href="../MenuPrincipal/MainMenu.html" class="btn btn-light"><i class="fas fa-home"></i> Home</a>
+            <a href="../shop/shop.html" class="btn btn-light"><i class="fas fa-shopping-cart"></i> Shop</a>
+            <a href="../keycomb/keycomb.html" class="btn btn-light"><i class="fas fa-link"></i> Key Comb.</a>
+        </div>
+        <button class="register-btn"><a href="../login_singup/singup.html" style="color: white; text-decoration: none;">Register now →</a></button>
+    </nav>
+
+    <div class="shortcut-section">
+        <h1 style="font-weight: 600; margin-bottom: 40px;">Quick Keyboard Shortcuts Guide</h1>
+        
+        <div class="shortcut-card">
+            <h4><i class="fas fa-sign-in-alt"></i> Ctrl + I</h4>
+            <p>Iniciar sesión</p>
+        </div>
+
+        <div class="shortcut-card">
+            <h4><i class="fas fa-user-plus"></i> Ctrl + L</h4>
+            <p>Registrarse</p>
+        </div>
+
+        <div class="shortcut-card">
+            <h4><i class="fas fa-shopping-cart"></i> Ctrl + S</h4>
+            <p>Ir a la tienda</p>
+        </div>
+    </div>
+
+    <script>
+        // Script para detectar los atajos de teclado
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'i') {
+                window.location.href = '../login_singup/login.html'; // Ajusta la ruta según tu login
+            }
+            if (event.ctrlKey && event.key === 'l') {
+                window.location.href = '../login_singup/singup.html'; // Ajusta la ruta según tu signup
+            }
+            if (event.ctrlKey && event.key === 's') {
+                window.location.href = '../shop/shop.html'; // Ajusta la ruta de tu tienda
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
