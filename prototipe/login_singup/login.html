@@ -25,22 +25,24 @@
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
+                            <input type="text" placeholder="Username" class="login__input" required>
                         </div>
     
                         <div class="login__box">
                             <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
+                            <input type="password" placeholder="Password" class="login__input" required>
                         </div>
 
                         <a href="#" class="login__forgot">Forgot password?</a>
-                        <a href="../MenuPrincipal/MainMenu.html" class="login__button" style="margin-top: 1rem;">Return to Main Menu</a>
-                        <a href="../shop/shop.html" class="login__button">Sign In</a>
+
+                        <!-- <a href="../shop/shop.html" class="login__button">Sign In</a> -->
 
                         <div>
                             <span class="login__account">Don't have an Account ?</span>
                             <span class="login__signin" id="sign-up"><a href="singup.html">Sign Up</a></span>
                         </div>
+
+                        <button class="login__button" type="submit" onclick="return validateForm()"><a href="../shop/shop.html">Sing In</a></button>
                     </form>
                     
                 </div>

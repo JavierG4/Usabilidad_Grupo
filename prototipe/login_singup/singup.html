@@ -25,26 +25,32 @@
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
+                            <input type="text" placeholder="Username" class="login__input" required>
                         </div>
     
                         <div class="login__box">
                             <i class='bx bx-at login__icon'></i>
-                            <input type="text" placeholder="Email" class="login__input">
+                            <input type="text" placeholder="Email" class="login__input" required>
                         </div>
 
                         <div class="login__box">
                             <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
+                            <input type="password" placeholder="Password" class="login__input" required>
                         </div>
 
+<<<<<<< HEAD
                         <a href="login.html" class="login__button">Sign Up</a>
                         <a href="../MenuPrincipal/MainMenu.html" class="login__button" style="margin-top: 1rem;">Return to Main Menu</a>
+=======
+                        <!-- <a href="login.html" class="login__button">Sign Up</a> -->
+>>>>>>> fde8846 (Requiered options)
 
                         <div>
                             <span class="login__account">Already have an Account ?</span>
-                            <span class="login__signup" id="sign-in"><a href="login.html">Sing In</a></span>
+                            <span class="login__signup" id="sign-in" type="submit"><a href="login.html">Sing In</a></span>
                         </div>
+
+                        <button class="login__button" type="submit" onclick="return validateForm()"><a href="login.html">Sign Up</a></button>
 
                         <div class="login__social">
                             <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
